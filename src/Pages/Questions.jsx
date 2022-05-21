@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useRef } from 'react'
 import { Question } from '../Components/Question'
 import Data from '../Modules/Data'
 
@@ -6,6 +6,7 @@ export const Questions = ({setpage}) => {
 
     const [index, setindex] = useState(0)
 
+    const QuestionNumber = useRef()
 
     const giveNextIndex = () => {
         // console.log(Asked)
@@ -35,7 +36,7 @@ export const Questions = ({setpage}) => {
 
     return (
         <div>
-            <Question index={index} asked={Data.Asked} gNI={giveNextIndex} setpage = {setpage} />
+            <Question index={index} asked={Data.Asked} gNI={giveNextIndex} setpage = {setpage} QN = {QuestionNumber} />
         </div>
     )
 }

@@ -1,8 +1,10 @@
 import React, { useState } from 'react'
 import Data from '../Modules/Data'
-export const FinalPage = () => {
+import { CleanUP } from '../Config/CleanUp'
+export const FinalPage = ({setpage}) => {
 
   const [Loading, setLoading] = useState(true)
+
 
   return (
     <div className='finalpage'>
@@ -12,7 +14,8 @@ export const FinalPage = () => {
       }
       <img onLoad={() => setLoading(false)} width="500px" src={Data.Image[Data.Final[0]]}></img>
       <p>{Data.Name[Data.Final[0]]}</p>
+      <button onClick={() => {setpage(2); CleanUP()} }>Guess Another Character</button>
+      <button onClick={() => {setpage(1); CleanUP()} }>Home</button>
     </div>
-
   )
 }

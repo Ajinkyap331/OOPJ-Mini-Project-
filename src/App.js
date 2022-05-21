@@ -14,7 +14,7 @@ function App() {
     <div className="App">
       {page === 1 && <StartPage setpage={setpage} />}
       {page === 2 && <Questions setpage={setpage} />}
-      {page === 3 && <FinalPage />}
+      {page === 3 && <FinalPage setpage={setpage} />}
     </div>
   );
 }
