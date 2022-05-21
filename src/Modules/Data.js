@@ -9,16 +9,3 @@ export default class Data{
     static Final = [-1];
     static Image = ["https://www.informalnewz.com/wp-content/uploads/2022/01/disha-wakani.jpg", "https://www.koimoi.com/wp-content/new-galleries/2022/04/when-taarak-mehta-ka-ooltah-chashmahs-jethalal-bashed-ott-platforms-for-using-abusive-language-there-is-a-limit-for-everything-01.jpg"]
 }
-
-
-// export const Starting = [0, 1, 1, 0, 0];
-// export const start = ["Is", "Does"];
-// export const Q = ["a boy", "age greator than 20", "have black hair", "fat", "Gujarati"];
-// export const YN = [[0, 1, 1, 0, 1], [1, 1, 1, 1, 1]];
-// export const Name = ["DAYA", "JETHALAL"];
-
-// export var Asked = Array(Q.length).fill(0)
-
-// export var fav = Array(Q.length).fill(0.0);
-
-// export var Final = [-1];
