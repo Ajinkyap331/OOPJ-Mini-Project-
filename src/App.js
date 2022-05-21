@@ -1,23 +1,20 @@
-import logo from './logo.svg';
+import { useState } from 'react';
+import { StartPage } from './Pages/StartPage';
+import { Questions } from './Pages/Questions';
+import { FinalPage } from './Pages/FinalPage';
 import './App.css';
+import './Styles/StartPage.css'
+import './Styles/Question.css'
+import './Styles/FinalPage.css'
 
 function App() {
+
+  const [page, setpage] = useState(1)
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {page === 1 && <StartPage setpage={setpage} />}
+      {page === 2 && <Questions setpage={setpage} />}
+      {page === 3 && <FinalPage />}
     </div>
   );
 }

@@ -1,0 +1,18 @@
+.startpage {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.startpage > button {
+  cursor: pointer;
+  padding : 10px 20px;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  background: #40ab6e;
+}
