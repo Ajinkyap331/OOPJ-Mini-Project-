@@ -9,7 +9,6 @@ export const Questions = ({setpage}) => {
     const QuestionNumber = useRef()
 
     const giveNextIndex = () => {
-        // console.log(Asked)
         var flag = 0;
         for (var i = 0; i < Data.Q.length; i++)
             if (Data.Asked[i] === 0) {
